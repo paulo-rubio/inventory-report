@@ -1,2 +1,5 @@
+
 class SimpleReport:
-    pass
+    @classmethod
+    def __init__(self, report):
+        pass
