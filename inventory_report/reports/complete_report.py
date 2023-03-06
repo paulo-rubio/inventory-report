@@ -9,9 +9,9 @@ class CompleteReport(SimpleReport):
         inf = ''
 
         for nameInc, qntVendas in company.items():
-            inf += f'- {nameInc}: {qntVendas}\n'
+            inf += f' - {nameInc}: {qntVendas}\n'
 
-        return f'Produtos estocados por empresa:\n{inf}'
+        return f'Produtos estocados por empresa:\n {inf}'
 
     @classmethod
     def generate(cls, report) -> str:
