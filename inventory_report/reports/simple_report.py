@@ -16,8 +16,7 @@ class SimpleReport:
             [prod["data_de_fabricacao"] for prod in report])
         max_date = min([
             prod["data_de_validade"] for prod in report if datetime.strptime(
-                prod["data_de_validade"],
-                '%Y-%m-%d') > datetime.now()])
+                prod["data_de_validade"], '%Y-%m-%d') > datetime.now()])
         return (old_date, max_date)
 
     @staticmethod
@@ -29,5 +28,5 @@ class SimpleReport:
         return (
             f'Data de fabricação mais antiga: {old_date}\n'
             f'Data de validade mais próxima: {max_date}\n'
-            f'Empresa com mais produtos: {mostVenderCompany}\n'
+            f'Empresa com mais produtos: {mostVenderCompany}'
         )
