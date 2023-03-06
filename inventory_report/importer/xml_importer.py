@@ -2,7 +2,7 @@ from inventory_report.importer.importer import Importer
 import xml.etree.ElementTree as ET
 
 
-class csv_Importer(Importer):
+class xml_Importer(Importer):
     @staticmethod
     def csv(path):
         if path.split('.')[1] != 'xml':
